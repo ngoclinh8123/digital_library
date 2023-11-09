@@ -1,0 +1,15 @@
+.action_container {
+  background-color: white;
+  box-shadow: 4px 4px 4px #cccccc78, -4px 4px 4px #cccccc78;
+  position: relative;
+  /* top: 12px; */
+}
+
+.action_row {
+  padding: 4px 12px;
+  cursor: pointer;
+}
+
+.action_row:hover {
+  background-color: rgba(110, 110, 110, 0.2);
+}

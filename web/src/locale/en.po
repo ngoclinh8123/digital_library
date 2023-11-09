@@ -1,0 +1,179 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=utf-8\n"
+"Plural-Forms: nplurals = 2; plural = (n != 1);\n"
+"Language: en\n"
+"mime-version: 1.0\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/components/auth/login/index.jsx:59
+msgid "Forgot password"
+msgstr ""
+
+#: src/components/auth/login/form.jsx:20
+msgid "Username"
+msgstr ""
+
+#: src/components/auth/login/form.jsx:25
+msgid "Password"
+msgstr ""
+
+#: src/components/auth/login/form.jsx:55
+#: src/components/auth/login/index.jsx:52
+msgid "Login"
+msgstr ""
+
+#: src/components/common/layout/main/index.jsx:83
+msgid "Profile"
+msgstr ""
+
+#: src/components/common/layout/main/index.jsx:91
+#: src/components/variable/config.js:14
+msgid "Config"
+msgstr ""
+
+#: src/components/common/layout/main/index.jsx:95
+msgid "Company"
+msgstr ""
+
+#: src/components/common/layout/main/index.jsx:100
+#: src/components/staff/config.js:15
+msgid "Staff"
+msgstr ""
+
+#: src/components/common/layout/main/index.jsx:108
+#: src/components/role/config.js:14
+msgid "Group"
+msgstr ""
+
+#: src/components/staff/config.js:33
+#: src/components/staff/profile/summary.jsx:22
+msgid "Fullname"
+msgstr ""
+
+#: src/components/auth/reset_pwd/form.jsx:26
+#: src/components/staff/config.js:36
+#: src/components/staff/profile/summary.jsx:10
+msgid "Email"
+msgstr ""
+
+#: src/components/staff/config.js:37
+#: src/components/staff/profile/summary.jsx:16
+#: src/components/staff/profile/update_profile/form.jsx:15
+msgid "Phone number"
+msgstr ""
+
+#: src/components/staff/config.js:38
+msgid "Active"
+msgstr ""
+
+#: src/components/staff/config.js:39
+msgid "Groups"
+msgstr ""
+
+#: src/components/staff/profile/index.jsx:44
+#: src/components/staff/profile/update_profile/index.jsx:42
+#: src/components/staff/profile/update_profile/index.jsx:45
+msgid "Update profile"
+msgstr ""
+
+#: src/components/auth/change_pwd/index.jsx:39
+#: src/components/auth/change_pwd/index.jsx:42
+#: src/components/staff/profile/index.jsx:52
+msgid "Change password"
+msgstr ""
+
+#: src/components/auth/reset_pwd/index.jsx:51
+#: src/components/auth/reset_pwd/index.jsx:53
+msgid "Reset password"
+msgstr ""
+
+#: src/components/auth/change_pwd/index.jsx:41
+#: src/components/auth/reset_pwd/index.jsx:52
+#: src/components/role/dialog/index.jsx:65
+#: src/components/staff/dialog/index.jsx:64
+#: src/components/staff/profile/update_profile/index.jsx:44
+#: src/components/variable/dialog/index.jsx:64
+msgid "Cancel"
+msgstr ""
+
+#: src/components/auth/change_pwd/form.jsx:20
+msgid "Old password"
+msgstr ""
+
+#: src/components/auth/change_pwd/form.jsx:25
+msgid "New password"
+msgstr ""
+
+#: src/components/auth/change_pwd/form.jsx:30
+msgid "Confirm new password"
+msgstr ""
+
+#: src/components/variable/config.js:23
+msgid "Config name"
+msgstr ""
+
+#: src/components/variable/config.js:24
+msgid "Config value"
+msgstr ""
+
+#: src/components/common/table/buttons.jsx:9
+#: src/components/role/table.jsx:134
+#: src/components/staff/table.jsx:152
+#: src/services/helpers/utils.js:117
+msgid "Add new"
+msgstr ""
+
+#: src/components/role/dialog/index.jsx:63
+#: src/components/staff/dialog/index.jsx:62
+#: src/components/variable/dialog/index.jsx:62
+msgid "Save"
+msgstr ""
+
+#: src/components/common/table/buttons.jsx:30
+#: src/services/helpers/utils.js:117
+msgid "Update"
+msgstr ""
+
+#: src/components/role/config.js:18
+#: src/components/staff/config.js:19
+#: src/components/variable/config.js:18
+#, javascript-format
+msgid "Do you want to remote this ${ name }?"
+msgstr ""
+
+#: src/components/role/config.js:19
+#: src/components/staff/config.js:20
+#: src/components/variable/config.js:19
+msgid "Do you want to remote these ${ name }?"
+msgstr ""
+
+#: src/components/common/table/buttons.jsx:23
+#: src/components/role/table.jsx:125
+#: src/components/staff/table.jsx:143
+msgid "Remove selected"
+msgstr ""
+
+#: src/components/staff/config.js:34
+msgid "Lastname"
+msgstr ""
+
+#: src/components/staff/config.js:35
+msgid "Firstname"
+msgstr ""
+
+#: src/components/role/config.js:29
+msgid "Group name"
+msgstr ""
+
+#: src/components/role/config.js:30
+msgid "Permissions"
+msgstr ""
+
+#: src/components/common/table/search_input.jsx:25
+msgid "Search"
+msgstr ""
+
+#: src/components/common/table/buttons.jsx:45
+msgid "Remove"
+msgstr ""

@@ -1,0 +1,122 @@
+{
+    "navMenu": {
+        "profile": "Hồ sơ",
+        "appointments": "Lịch hẹn"
+    },
+    "login": {
+        "label": {
+            "signin": "Đăng nhập",
+            "forgotPassword": "Quên mật khẩu ?",
+            "signup": "Đăng ký mới",
+            "copyRight": "OneVinmec ver1.0 Copyright @ 2020\n Vinmec Healthcare System, All right reserved"
+        },
+        "login": "Đăng nhập",
+        "loginByOTP": "Đăng nhập bằng OTP",
+        "sendOTP": "Gửi SMS OTP",
+        "signup": "Đăng ký",
+        "reset": "Khôi phục",
+        "resetPassword": "Khôi phục mật khẩu",
+        "forgotPassword": "Quên mật khẩu",
+        "email": "Email",
+        "username": "Tên đăng nhập",
+        "emailOrPhone": "Email or phone",
+        "firstName": "Họ",
+        "lastName": "Tên lót & tên",
+        "phone": "Số điện thoại",
+        "sms": "SMS code",
+        "dob": "Ngày tháng năm sinh",
+        "gender": "Giới tính",
+        "password": "Mật khẩu",
+        "verificationCode": "Mã xác thực",
+        "passwordAgain": "Nhập lại mật khẩu",
+        "passwordAgainDidNotMatch": "Mật khẩu nhập lại không khớp",
+        "wrongEmailOrPassword": "Sai email hoặc mật khẩu"
+    },
+    "signup": {
+        "title": {
+            "main": "Tạo tài khoản mới",
+            "sub": "Vui lòng điền thông tin chính xác giúp bạn làm thủ tục tại bệnh viện nhanh chóng và dễ dàng hơn"
+        },
+        "buttonLabel": "Đăng ký",
+        "term": {
+            "1st": "Đăng ký nghĩa là bạn đồng ý với các",
+            "2nd": "điều khoản và điều kiện",
+            "3rd": "sử dụng OneVinmec"
+        }
+    },
+    "otp": {
+        "title": {
+            "phone": "Xác thực số điện thoại",
+            "email": "Xác thực địa chỉ email",
+            "sub": "Mã xác thực OTP đã được gửi đến"
+        },
+        "verificationCode": "Mã xác thực",
+        "verify": "Xác thực",
+        "notReceiveOTPYet": "Bạn chưa nhận được mã ?",
+        "sendOTPAgain": "Gửi lại OTP"
+    },
+    "profile": {
+        "title_add": "Thêm hồ sơ người thân",
+        "title_update": "Cập nhật hồ sơ",
+        "name": "Họ tên bạn",
+        "dob": "Ngày sinh",
+        "phone_number": "Số điện thoại",
+        "email": "Email",
+        "gender": "Giới tính",
+        "relationship": "Mối quan hệ",
+        "bloodType": "Nhóm máu",
+        "bloodSugar": "Đường huyết",
+        "bloodPressure": "Huyết áp",
+        "button": {
+            "updateProfile": "Cập nhật profile",
+            "changePassword": "Đổi mật khẩu"
+        }
+    },
+    "common": {
+        "button": {
+            "close": "Đóng",
+            "add": "Thêm mới",
+            "update": "Cập nhật"
+        },
+        "form": {
+            "password": "Nhập mật khẩu",
+            "oldPassword": "Mật khẩu cũ",
+            "passwordAgain": "Nhập lại mật khẩu",
+            "newPassword": "Mật khẩu mới",
+            "phoneOrEmail": "Số điện thoại hoặc email"
+        },
+        "placeholder": {
+            "phoneOrEmail": "Nhập số điện thoại hoặc email",
+            "password": "Nhập mật khẩu"
+        },
+        "label": {
+            "blank": "Trống",
+            "relativeType": {
+                "0": "Bạn",
+                "1": "Bố",
+                "2": "Mẹ",
+                "3": "Vợ",
+                "4": "Chồng",
+                "5": "Con",
+                "6": "Khác"
+            }
+        },
+        "message": {
+            "passwordDoesNotMatch": "Xác nhận mật khẩu không đúng"
+        },
+        "option": {
+            "gender": {
+                "male": "Nam",
+                "female": "Nữ"
+            },
+            "relationship": {
+                "father": "Cha",
+                "mother": "Mẹ",
+                "wife": "Vợ",
+                "husband": "Chồng",
+                "child": "Con",
+                "other": "Khác"
+            }
+        }
+    }
+}

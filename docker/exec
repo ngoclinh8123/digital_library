@@ -1,0 +1,111 @@
+#!/bin/bash
+
+
+NAME="dien_ban"
+DOMAIN="dienbanlib.test"
+
+FIRST_ARG="$1"
+shift
+ARGS="$@"
+
+docker_down () {
+    COMPOSE_HTTP_TIMEOUT=512 docker compose down
+}
+
+docker_up () {
+    COMPOSE_HTTP_TIMEOUT=512 docker compose up -d
+}
+
+help () {
+    echo "build             :  build docker instance"
+    echo "up                :  up docker instance"
+    echo "down              :  down docker inscance"
+    echo "restart           :  down then up docker instance"
+    echo "prepare           :  run first setup for django dev server"
+    echo "bserver           :  run django dev server"
+    echo "btest             :  run test"
+    echo "fserver           :  run webpack dev server"
+    echo "yarn              :  run yarn"
+    echo "poetry            :  run poetry command on api service"
+    echo "manage.py         :  run manage.y"
+    echo "api <args>        :  execute random command on api service, ex: ./exec api ls"
+    echo "api-upgrade       :  upgrade api dependencies",
+    echo "api-post-upgrade  :  check outdated api dependencies"
+}
+
+if [ "$FIRST_ARG" == "-h" ]; then
+    help
+    exit 0
+fi
+
+if [ "$FIRST_ARG" == "api" ] || [ "$FIRST_ARG" == "db" ] || [ "$FIRST_ARG" == "web" ]; then
+    docker compose exec "$NAME"_"$FIRST_ARG" $ARGS
+elif [ "$FIRST_ARG" == "yarn" ]; then
+    docker compose exec "$NAME"_web yarn $ARGS
+elif [ "$FIRST_ARG" == "fserver" ]; then
+    docker compose exec "$NAME"_web yarn dev
+elif [ "$FIRST_ARG" == "fmakemessages" ]; then
+    docker compose exec "$NAME"_web node_modules/.bin/ttag update src/locale/vi.po src
+    docker compose exec "$NAME"_web node_modules/.bin/ttag update src/locale/en.po src
+elif [ "$FIRST_ARG" == "fdumpmessages" ]; then
+    docker compose exec "$NAME"_web node_modules/.bin/ttag po2json src/locale/vi.po > ../web/src/locale/vi.po.json
+    docker compose exec "$NAME"_web node_modules/.bin/ttag po2json src/locale/en.po > ../web/src/locale/en.po.json
+elif [ "$FIRST_ARG" == "ftest" ]; then
+    docker compose exec "$NAME"_web yarn test $ARGS
+elif [ "$FIRST_ARG" == "poetry" ]; then
+    docker compose exec "$NAME"_api poetry $ARGS
+elif [ "$FIRST_ARG" == "manage.py" ]; then
+    docker compose exec "$NAME"_api poetry run python manage.py $ARGS
+elif [ "$FIRST_ARG" == "prepare" ]; then
+    for action in "migrate" "cmd_account_seeding";
+    do
+        echo "Run $action command"
+        docker compose exec "$NAME"_api poetry run python manage.py $action;
+    done
+    echo "Run collectstatic command"
+    docker compose exec "$NAME"_api poetry run python manage.py collectstatic --noinput;
+    echo "Run createsuperuser command"
+    docker compose exec "$NAME"_api poetry run python manage.py createsuperuser --noinput --username admin --email admin@email.com;
+    echo "Add domain to hosts (if needed)"
+    cat /etc/hosts | grep -e $DOMAIN -q
+    RETURN=$?
+    if [ $RETURN -eq 0 ];
+    then
+        echo "Done";
+    else
+        echo "You need sudo for change hosts file"
+        sudo sh -c 'echo "127.0.0.1       dienbanlib.test" >> /etc/hosts'
+        echo "Add done"
+    fi
+elif [ "$FIRST_ARG" == "bserver" ]; then
+    docker compose exec "$NAME"_api poetry run python manage.py runserver 0.0.0.0:4000
+elif [ "$FIRST_ARG" == "up" ]; then
+    docker_up
+elif [ "$FIRST_ARG" == "down" ]; then
+    docker_down
+elif [ "$FIRST_ARG" == "restart" ]; then
+    docker_down
+    docker_up
+elif [ "$FIRST_ARG" == "build" ]; then
+    docker compose build --no-cache
+elif [ "$FIRST_ARG" == "pg_dump" ]; then
+    docker compose exec "$NAME"_db pg_dump $ARGS
+    # ./exec pg_dump -U username db_name > db.sql
+elif [ "$FIRST_ARG" == "clean-db" ]; then
+    docker_down
+    rm -rf dbdata
+    mkdir dbdata
+    docker_up
+    docker compose exec "$NAME"_api poetry run python manage.py migrate
+    docker compose exec "$NAME"_api poetry run python manage.py cmd_account_seeding
+elif [ "$FIRST_ARG" == "btest" ]; then
+    if [[ $1 ]]; then
+        docker compose exec "$NAME"_api poetry run python manage.py test $1
+    else
+        docker compose exec "$NAME"_api poetry run python manage.py test
+    fi
+else
+    echo "Invalid argument, please use following arguments:"
+    echo "-------------------------------------------------"
+    help
+fi

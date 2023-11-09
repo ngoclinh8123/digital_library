@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/public/static/landing_page/img/logo.png"
+    />
+    <title>Thư viện Điện Bàn</title>
+    <link rel="stylesheet" href="/public/static/landing_page/css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <a href="" class="logo_wrap">
+          <img
+            src="/public/static/landing_page/img/logo.png"
+            alt=""
+            class="logo_img"
+          />
+          <div class="logo_title">
+            <span class="logo_title--top">HỆ THỐNG THƯ VIỆN SÁCH ĐIỆN TỬ</span>
+            <span class="logo_title--bottom">THƯ VIỆN ĐIỆN BÀN</span>
+          </div>
+        </a>
+      </div>
+      <div class="filter fcc">
+        <div class="filter_wrap fcc">
+          <div class="filter_type">
+            <span class="filter_type__title"
+              ><span>Thể loại</span>
+              <img
+                src="/public/static/landing_page/img/down_dark_icon.png"
+                alt=""
+                class="filter_type__title--icon"
+            /></span>
+            <div class="filter_type__list">
+              <div class="filter_type__item">
+                <img
+                  src="/public/static/landing_page/img/book_icon.png"
+                  alt=""
+                  class="filter_type__item--icon"
+                />
+                <span>Sách giấy</span>
+              </div>
+              <div class="filter_type__item">
+                <img
+                  src="/public/static/landing_page/img/ebook_icon.png"
+                  alt=""
+                  class="filter_type__item--icon"
+                />
+                <span>Sách điện tử</span>
+              </div>
+            </div>
+          </div>
+          <span>
+            <img
+              src="/public/static/landing_page/img/mic_icon.png"
+              alt=""
+              class="filter_icon"
+            />
+          </span>
+          <input
+            type="text"
+            placeholder="Tiêu đề tài liệu"
+            class="filter_input"
+          />
+          <span>
+            <img
+              src="/public/static/landing_page/img/search_icon.png"
+              alt=""
+              class="filter_icon"
+            />
+          </span>
+        </div>
+        <a href="" class="filter_advance">Tìm kiếm nâng cao</a>
+      </div>
+      <div class="header_login fcc">
+        <a href="">Đăng nhập</a>
+        <span class="header_menu_btn">
+          <img
+            src="/public/static/landing_page/img/menu_icon.png"
+            alt=""
+            class="logo_img"
+          />
+        </span>
+      </div>
+    </header>
+    <main class="body">
+      <aside class="menu">
+        <div class="menu_padding--top">
+          <span class="menu_close_btn">
+            <img src="/public/static/landing_page/img/close_icon.png" alt="" />
+          </span>
+        </div>
+        <div class="menu_block">
+          <div class="menu_block__title">THƯ MỤC</div>
+          {% block book_menu %}{%endblock%}
+          <!--  -->
+          {% block ebook_menu %}{%endblock%}
+        </div>
+        <div class="menu_block">
+          <div class="menu_block__title">TIỆN ÍCH THƯ VIỆN</div>
+          <div class="menu_block__item">
+            <div class="menu_item">
+              <a href="" class="menu_block__item--title">
+                <img
+                  src="/public/static/landing_page/img/text_icon.png"
+                  alt=""
+                />
+                <span>Giới thiệu</span>
+              </a>
+            </div>
+          </div>
+          <div class="menu_block__item">
+            <div class="menu_item">
+              <a href="" class="menu_block__item--title">
+                <img
+                  src="/public/static/landing_page/img/text_icon.png"
+                  alt=""
+                />
+                <span>Tin tức</span>
+              </a>
+            </div>
+          </div>
+          <div class="menu_block__item">
+            <div class="menu_item">
+              <a href="" class="menu_block__item--title">
+                <img
+                  src="/public/static/landing_page/img/text_icon.png"
+                  alt=""
+                />
+                <span>Giới thiệu sách</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="menu_block">
+          <div class="menu_block__title">LIÊN KẾT WEBSITE</div>
+          <div class="menu_block__item menu_block__item--select">
+            <select name="test" aria-invalid="false" class="website_select">
+              <option value="">Lựa chọn website</option>
+              <option value="">Thư viện Hà Nội</option>
+              <option value="">Thư viện Quốc gia Việt Nam</option>
+              <option value="">Kho học liệu số</option>
+            </select>
+          </div>
+        </div>
+        <div class="menu_block">
+          <div class="menu_block__title">TÀI KHOẢN</div>
+          <div class="menu_block__item">
+            <div class="menu_item">
+              <a href="" class="menu_block__item--title">
+                <img
+                  src="/public/static/landing_page/img/text_icon.png"
+                  alt=""
+                />
+                <span>Đăng nhập</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </aside>
+      {% block content %} {% endblock %}
+      <div class="overlay"></div>
+    </main>
+    <footer class="footer fcc">
+      <div class="footer_wrap">
+        <div class="footer_col">
+          <span class="footer_title">THƯ VIỆN ĐIỆN BÀN</span>
+          <span>Địa chỉ: Hoàng Thành Villas, P.Mộ Lao, Hà Đông, Hà Nội</span>
+          <span>Website: <a href="">https://www.zen8labs.com/</a></span>
+          <span>Email: hi@zen8labs.com</span>
+        </div>
+        <div class="footer_col">
+          <span>Kết nối với chúng tôi:</span>
+          <div class="footer_social_wrap">
+            <a href="" class="footer_social">
+              <img
+                src="/public/static/landing_page/img/facebook_icon.png"
+                alt=""
+              />
+            </a>
+            <a href="" class="footer_social">
+              <img
+                src="/public/static/landing_page/img/instagram_icon.png"
+                alt=""
+              />
+            </a>
+            <a href="" class="footer_social">
+              <img
+                src="/public/static/landing_page/img/twitter_icon.png"
+                alt=""
+              />
+            </a>
+            <a href="" class="footer_social">
+              <img
+                src="/public/static/landing_page/img/linkedin_icon.png"
+                alt=""
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="/public/static/landing_page/js/home.js"></script>
+</html>

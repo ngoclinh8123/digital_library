@@ -1,0 +1,176 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-03-20 14:42+0700\n"
+"PO-Revision-Date: 2020-02-19 11:22+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: apps/customer/serializers.py:48
+msgid "Invalid email format"
+msgstr ""
+
+#: apps/customer/serializers.py:49
+msgid "Please enter your password"
+msgstr ""
+
+#: apps/customer/serializers.py:50
+msgid "Email length can not excess 100 characters"
+msgstr ""
+
+#: apps/customer/serializers.py:65
+msgid "Phone number can not be blank"
+msgstr ""
+
+#: apps/customer/serializers.py:66
+msgid "Phone number length can not excess 50 characters"
+msgstr ""
+
+#: apps/customer/utils.py:324
+msgid "This profile already had PID"
+msgstr ""
+
+#: apps/customer/utils.py:326
+msgid "Can not set PID"
+msgstr ""
+
+#: apps/customer/utils.py:329
+msgid "Neither you nor your relatives have this profile_id"
+msgstr ""
+
+#: apps/customer/utils.py:336 apps/vinmec/views.py:113
+msgid "PID is required"
+msgstr ""
+
+#: apps/customer/utils.py:383
+msgid "Can not add yourself as a relative"
+msgstr ""
+
+#: apps/customer/utils.py:484
+msgid "Our system detects that you could be a robot. Please try again."
+msgstr ""
+
+#: apps/customer/views.py:38
+msgid "OneVinmec - Email address verification"
+msgstr ""
+
+#: apps/customer/views.py:80
+msgid "Can not add a profile multiple times"
+msgstr ""
+
+#: apps/customer/views.py:112
+msgid "This relative profile already exist."
+msgstr ""
+
+#: apps/customer/views.py:144
+msgid "Can not refresh token"
+msgstr ""
+
+#: apps/customer/views.py:179
+msgid ""
+"Your account has been locked. Please, reactivate it before logging in again!"
+msgstr ""
+
+#: apps/customer/views.py:181
+#: utils/authentication/firebase_authentication.py:21
+msgid "Incorrect login information. Please, try again"
+msgstr ""
+
+#: apps/customer/views.py:207
+msgid ""
+"This email already exists in the system. Please, use another email to "
+"register or use the \"Forgot password\" function."
+msgstr ""
+
+#: apps/customer/views.py:209
+msgid ""
+"This phone number already exists in the system. Please use another phone "
+"number to register or use the \"Forgot password\" function."
+msgstr ""
+
+#: apps/customer/views.py:238 apps/customer/views.py:324
+#: apps/customer/views.py:426 apps/verif/views.py:15 apps/vinmec/views.py:156
+msgid "Invalid OTP"
+msgstr ""
+
+#: apps/customer/views.py:253
+msgid "Wrong activation code"
+msgstr ""
+
+#: apps/customer/views.py:329
+msgid "Can not reset password"
+msgstr ""
+
+#: apps/customer/views.py:401
+msgid "You can only connect PID your profile or relative profiles"
+msgstr ""
+
+#: apps/customer/views.py:409
+msgid "This profile already connected with PID"
+msgstr ""
+
+#: apps/customer/views.py:451
+msgid "Incorrect current password"
+msgstr ""
+
+#: apps/verif/utils.py:15
+msgid "OneVinmec - Verification code"
+msgstr ""
+
+#: apps/verif/utils.py:19
+msgid ""
+"You have entered incorrect OTP so many times. Please go to Vinmec service "
+"counter to verify your account"
+msgstr ""
+
+#: apps/verif/utils.py:58
+msgid "Can not send OTP, please try again after 90 seconds"
+msgstr ""
+
+#: apps/vinmec/views.py:118 apps/vinmec/views.py:127
+msgid "Patient code does not exist in Vinmec Healthcare System"
+msgstr ""
+
+#: apps/vinmec/views.py:133
+msgid ""
+"We did not find any phone number which is associated to your Vinmec’s "
+"medical record. Please contact Vinmec customer care for support"
+msgstr ""
+
+#: apps/vinmec/views.py:169
+msgid "You have no permission to get this profile info"
+msgstr ""
+
+#: utils/helpers/tools.py:453
+msgid ""
+"Passwords must contain at least 8 characters in length, a minimum of 1 "
+"uppercase letter, a minimum of 1 numeric character"
+msgstr ""
+
+#: utils/helpers/tools.py:458
+msgid "Make sure your password is at least 8 letters"
+msgstr ""
+
+#: utils/helpers/tools.py:460
+msgid "Make sure your password has a number in it"
+msgstr ""
+
+#: utils/helpers/tools.py:462
+msgid "Make sure your password has a capital letter in it"
+msgstr ""
+
+#: utils/validator.py:19
+msgid "Invalid phone number format"
+msgstr ""

@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;600&display=swap");
+
+.book_view_block {
+  font-family: "Quicksand", sans-serif;
+  color: #5c5c5c;
+  background-color: #eeeeeea6;
+  width: 100%;
+  height: 100%;
+}
+
+.book_item_wrap,
+.book_info_wrap {
+  box-shadow: 0 0 8px 4px rgba(81, 81, 81, 0.311);
+  padding: 24px 12px;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.book_info_img {
+  width: 100%;
+}
+
+.book_info_content {
+  margin-left: 12px;
+}
+
+.book_info_title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.book_item_wrap {
+  margin-top: 24px;
+  flex-direction: column;
+}
+
+.book_item_heading {
+  display: flex;
+  justify-content: space-between;
+}
+
+.book_item_foot {
+  margin-top: 24px;
+}
+
+.book_item_foot_wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.book_item_title {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.book_item_btn_ok,
+.book_item_btn_cancel,
+.book_item_btn_edit {
+  font-size: 14px;
+  cursor: pointer;
+  padding: 4px 12px;
+  border-radius: 4px;
+}
+
+.book_item_btn_ok,
+.book_item_btn_edit {
+  color: blue;
+  border: 1px solid blue;
+}
+
+.book_item_btn_edit:hover,
+.book_item_btn_cancel:hover,
+.book_item_btn_edit:hover {
+  opacity: 0.8;
+  background-color: #eeeeee36;
+}
+
+.book_item_btn_cancel {
+  margin-right: 8px;
+  color: red;
+  border: 1px solid red;
+}
+
+.form_wrap {
+  margin-top: 12px;
+}
+
+.form_row,
+.form_row_head {
+  padding: 4px 10px;
+}
+
+.form_row {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.form_item_btn_delete {
+  text-align: end;
+  color: red;
+  cursor: pointer;
+}
+
+.book_form_wrap {
+  min-width: 520px;
+}

@@ -1,0 +1,55 @@
+{
+  "charset": "utf-8",
+  "headers": {
+    "content-type": "text/plain; charset=utf-8",
+    "plural-forms": "nplurals = 2; plural = (n != 1);",
+    "language": "en",
+    "mime-version": "1.0",
+    "content-transfer-encoding": "8bit"
+  },
+  "translations": {
+    "": {
+      "": {
+        "msgid": "",
+        "msgstr": [
+          "Content-Type: text/plain; charset=utf-8\nPlural-Forms: nplurals = 2; plural = (n != 1);\nLanguage: en\nmime-version: 1.0\nContent-Transfer-Encoding: 8bit\n"
+        ]
+      },
+      "Forgot password": { "msgid": "Forgot password", "msgstr": [""] },
+      "Username": { "msgid": "Username", "msgstr": [""] },
+      "Password": { "msgid": "Password", "msgstr": [""] },
+      "Login": { "msgid": "Login", "msgstr": [""] },
+      "Profile": { "msgid": "Profile", "msgstr": [""] },
+      "Config": { "msgid": "Config", "msgstr": [""] },
+      "Company": { "msgid": "Company", "msgstr": [""] },
+      "Staff": { "msgid": "Staff", "msgstr": [""] },
+      "Group": { "msgid": "Group", "msgstr": [""] },
+      "Fullname": { "msgid": "Fullname", "msgstr": [""] },
+      "Email": { "msgid": "Email", "msgstr": [""] },
+      "Phone number": { "msgid": "Phone number", "msgstr": [""] },
+      "Active": { "msgid": "Active", "msgstr": [""] },
+      "Groups": { "msgid": "Groups", "msgstr": [""] },
+      "Update profile": { "msgid": "Update profile", "msgstr": [""] },
+      "Change password": { "msgid": "Change password", "msgstr": [""] },
+      "Reset password": { "msgid": "Reset password", "msgstr": [""] },
+      "Cancel": { "msgid": "Cancel", "msgstr": [""] },
+      "Old password": { "msgid": "Old password", "msgstr": [""] },
+      "New password": { "msgid": "New password", "msgstr": [""] },
+      "Confirm new password": { "msgid": "Confirm new password", "msgstr": [""] },
+      "Config name": { "msgid": "Config name", "msgstr": [""] },
+      "Config value": { "msgid": "Config value", "msgstr": [""] },
+      "Add new": { "msgid": "Add new", "msgstr": [""] },
+      "Save": { "msgid": "Save", "msgstr": [""] },
+      "Update": { "msgid": "Update", "msgstr": [""] },
+      "Do you want to remote this ${ name }?": { "msgid": "Do you want to remote this ${ name }?", "msgstr": [""] },
+      "Do you want to remote these ${ name }?": { "msgid": "Do you want to remote these ${ name }?", "msgstr": [""] },
+      "Remove selected": { "msgid": "Remove selected", "msgstr": [""] },
+      "Lastname": { "msgid": "Lastname", "msgstr": ["Last Name"] },
+      "Firstname": { "msgid": "Firstname", "msgstr": ["First Name"] },
+      "Group name": { "msgid": "Group name", "msgstr": [""] },
+      "Permissions": { "msgid": "Permissions", "msgstr": [""] },
+      "Search": { "msgid": "Search", "msgstr": [""] },
+      "Remove": { "msgid": "Remove", "msgstr": [""] }
+    }
+  }
+}

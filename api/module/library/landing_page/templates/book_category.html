@@ -1,0 +1,157 @@
+{% extends 'base.html' %}
+<!--  -->
+{% block book_menu %}
+<div class="menu_block__item choose">
+  <div class="menu_item">
+    <a href="/demo/book" class="menu_block__item--title">
+      <img src="/public/static/landing_page/img/book_icon.png" alt="" />
+      <span>Sách giấy</span>
+    </a>
+    <span class="menu_block__item--action fcc show_item">
+      <img
+        src="/public/static/landing_page/img/down_icon.png"
+        alt=""
+        class="menu_block__item--icon-black"
+      />
+      <img
+        src="/public/static/landing_page/img/down_white.png"
+        alt=""
+        class="menu_block__item--icon-white"
+      />
+    </span>
+  </div>
+  <div class="menu_subitem_list show">
+    {% for item in category_books %}
+    <div class="menu_block__item {% if item.id == id %} choose {% endif %}">
+      <div class="menu_item">
+        <a
+          href="/demo/book/category/{{item.id}}"
+          class="menu_block__item--title menu_sub_item"
+        >
+          <img src="/public/static/landing_page/img/dash_icon.png" alt="" />
+          <img
+            src="/public/static/landing_page/img/dash_white_icon.png "
+            alt=""
+          />
+          <span>{{ item.title }} ({{item.book_item_count}})</span>
+        </a>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}
+
+<!--  -->
+{% block ebook_menu %}
+<div class="menu_block__item">
+  <div class="menu_item">
+    <a href="/demo/ebook" class="menu_block__item--title">
+      <img src="/public/static/landing_page/img/book_icon.png" alt="" />
+      <span>Sách điện tử</span>
+    </a>
+    <span class="menu_block__item--action fcc">
+      <img
+        src="/public/static/landing_page/img/down_icon.png"
+        alt=""
+        class="menu_block__item--icon-black"
+      />
+      <img
+        src="/public/static/landing_page/img/down_white.png"
+        alt=""
+        class="menu_block__item--icon-white"
+      />
+    </span>
+  </div>
+  <div class="menu_subitem_list">
+    {% for item in category_ebooks %}
+    <div class="menu_block__item">
+      <div class="menu_item">
+        <a
+          href="/demo/ebook/category/{{item.id}}"
+          class="menu_block__item--title menu_sub_item"
+        >
+          <img src="/public/static/landing_page/img/dash_icon.png" alt="" />
+          <img
+            src="/public/static/landing_page/img/dash_white_icon.png "
+            alt=""
+          />
+          <span>{{ item.title }} ({{item.book_count}})</span>
+        </a>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}
+<!--  -->
+{% block content %}
+<main class="content">
+  <div class="breadcrumb">
+    <a href="/demo" class="breadcrumb_item">Trang chủ</a>
+    <span>></span>
+    <a href="/demo/book" class="breadcrumb_item active">Sách giấy</a>
+  </div>
+
+  <div class="book_list__wrap">
+    <div class="book_list__heading">
+      <p class="book_list__title">{{ title }}</p>
+      <a href=""></a>
+    </div>
+    {% if current_page <= total_number_page %}
+    <div class="book_list">
+      {% for book in books %}
+      <div class="book_item">
+        <div class="book_item__wrap">
+          <div class="book_item__thumbnail">
+            <a href="/demo/book/{{book.id}}">
+              <img
+                src="{{domain}}{{book.thumbnail}}"
+                alt=""
+                onerror="this.src='/public/static/landing_page/img/book_default.jpg'"
+              />
+            </a>
+          </div>
+          <a href="/demo/book/{{book.id}}" class="book_item__title"
+            >{{book.title}}</a
+          >
+          <p class="book_item__author">
+            Tác giả: <span>{{ book.authors.all|join:", " }}</span>
+          </p>
+          <p class="book_item__publisher">
+            Thông tin xuất bản: <span>{{book.publisher}}</span>
+          </p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    {% endif %}
+    <br />
+  </div>
+  {% if current_page <= total_number_page %}
+  <div class="pagination fcc">
+    <div class="pagination_list fcc">
+      <div
+        class="pagination_prev_btn {% if current_page < 6 %} hide {% endif %}"
+      >
+        <img src="/public/static/landing_page/img/next_icon.png" alt="" />
+        <img src="/public/static/landing_page/img/next_white_icon.png" alt="" />
+      </div>
+      {% for i in total_page %}
+      <a
+        href="/demo/book/category/{{id}}"
+        class="pagination_item {% if i == current_page %} choose {% endif %}"
+        >{{i}}</a
+      >
+      {% endfor %}
+      <div
+        class="pagination_next_btn {% if total_number_page < 6 %} hide {% endif %}"
+      >
+        <img src="/public/static/landing_page/img/next_icon.png" alt="" />
+        <img src="/public/static/landing_page/img/next_white_icon.png" alt="" />
+      </div>
+    </div>
+  </div>
+  {% endif %}
+</main>
+{% endblock %}

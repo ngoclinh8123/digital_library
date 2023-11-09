@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;600&display=swap");
+
+.container {
+  font-family: "Quicksand", sans-serif;
+  color: #5c5c5c;
+  font-size: 16px;
+}
+
+.book_image {
+  width: 100px;
+  margin-right: 24px;
+}
+
+.book_title {
+  font-size: 20px;
+}
+
+.book_container,
+.reader_container {
+  margin: 24px 36px;
+  padding: 16px 12px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.status_wrap {
+  color: white;
+  padding: 8px 36px;
+  font-weight: 600;
+}
+
+.btn_update {
+  margin-right: 8px;
+}
+
+.action_wrap {
+  margin-left: 36px;
+}
+
+.reader_row {
+  display: flex;
+}
+
+.reader_title {
+  width: 100px;
+}

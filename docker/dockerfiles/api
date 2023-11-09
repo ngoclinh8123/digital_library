@@ -1,0 +1,27 @@
+FROM python:3.10.4-alpine
+
+RUN apk add --update \
+        --virtual build-deps gcc python3-dev musl-dev \
+        curl \
+        build-base \
+        jpeg-dev \
+        zlib-dev \
+        linux-headers \
+        py3-cffi \
+        py3-cryptography \
+        gettext \
+        libffi-dev \
+        openssl-dev \
+        bash \
+        postgresql-dev
+
+ENV PYTHONUNBUFFERED 1
+ENV CRYPTOGRAPHY_DONT_BUILD_RUST 1
+RUN mkdir /code
+RUN mkdir /firebase
+WORKDIR /code
+
+ADD ./pyproject.toml /code/
+RUN python3 -m pip install --upgrade pip
+RUN python3 -m pip install --upgrade poetry
+RUN poetry install

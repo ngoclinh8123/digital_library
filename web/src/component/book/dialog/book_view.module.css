@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;600&display=swap");
+
+.container {
+  font-family: "Quicksand", sans-serif;
+  color: #5c5c5c;
+}
+
+.content_container {
+  display: flex;
+}
+
+.book_image {
+  width: 200px;
+  float: right;
+  object-fit: contain;
+  margin-right: 24px;
+  object-position: top;
+}
+
+.book_title {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.book_content_row {
+  margin-top: 8px;
+}
+
+.book_category_title,
+.book_author_title {
+  font-weight: 600;
+}
+
+.book_language {
+  margin-left: 4px;
+  padding-left: 4px;
+  border-left: 1px solid #5c5c5c;
+}
+
+.book_description {
+  margin-top: 8px;
+  width: 100%;
+  text-align: justify;
+  height: 60px;
+  line-height: 20px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+
+.book_item_container {
+  padding: 24px 12px;
+  border-top: 1px solid rgba(112, 112, 112, 0.264);
+  max-height: 342px;
+  overflow-y: scroll;
+}

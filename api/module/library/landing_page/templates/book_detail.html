@@ -1,0 +1,187 @@
+{% extends 'base.html' %}
+<!--  -->
+{% block book_menu %}
+<div class="menu_block__item choose">
+  <div class="menu_item">
+    <a href="/demo/book" class="menu_block__item--title">
+      <img src="/public/static/landing_page/img/book_icon.png" alt="" />
+      <span>Sách giấy</span>
+    </a>
+    <span class="menu_block__item--action fcc show_item">
+      <img
+        src="/public/static/landing_page/img/down_icon.png"
+        alt=""
+        class="menu_block__item--icon-black"
+      />
+      <img
+        src="/public/static/landing_page/img/down_white.png"
+        alt=""
+        class="menu_block__item--icon-white"
+      />
+    </span>
+  </div>
+  <div class="menu_subitem_list show">
+    {% for item in category_books %}
+    <div class="menu_block__item {% if item.id == id %} choose {% endif %}">
+      <div class="menu_item">
+        <a
+          href="/demo/book/category/{{item.id}}"
+          class="menu_block__item--title menu_sub_item"
+        >
+          <img src="/public/static/landing_page/img/dash_icon.png" alt="" />
+          <img
+            src="/public/static/landing_page/img/dash_white_icon.png "
+            alt=""
+          />
+          <span>{{ item.title }} ({{item.book_item_count}})</span>
+        </a>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}
+
+<!--  -->
+{% block ebook_menu %}
+<div class="menu_block__item">
+  <div class="menu_item">
+    <a href="/demo/ebook" class="menu_block__item--title">
+      <img src="/public/static/landing_page/img/book_icon.png" alt="" />
+      <span>Sách điện tử</span>
+    </a>
+    <span class="menu_block__item--action fcc">
+      <img
+        src="/public/static/landing_page/img/down_icon.png"
+        alt=""
+        class="menu_block__item--icon-black"
+      />
+      <img
+        src="/public/static/landing_page/img/down_white.png"
+        alt=""
+        class="menu_block__item--icon-white"
+      />
+    </span>
+  </div>
+  <div class="menu_subitem_list">
+    {% for item in category_ebooks %}
+    <div class="menu_block__item">
+      <div class="menu_item">
+        <a
+          href="/demo/ebook/category/{{item.id}}"
+          class="menu_block__item--title menu_sub_item"
+        >
+          <img src="/public/static/landing_page/img/dash_icon.png" alt="" />
+          <img
+            src="/public/static/landing_page/img/dash_white_icon.png "
+            alt=""
+          />
+          <span>{{ item.title }} ({{item.book_count}})</span>
+        </a>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}
+<!--  -->
+{% block content %}
+<main class="content">
+  {% if book %}
+  <div class="breadcrumb">
+    <a href="/demo" class="breadcrumb_item">Trang chủ</a>
+    <span>></span>
+    {% if type == "book" %}
+    <!--  -->
+    <a href="/demo/book" class="breadcrumb_item active">Sách giấy</a>
+    <!--  -->
+    {% else %}
+    <!--  -->
+    <a href="/demo/ebook" class="breadcrumb_item active">Sách điện tử</a>
+    <!--  -->
+    {% endif %}
+    <span>></span>
+    <a href="" class="breadcrumb_item active">{{ book.title }}</a>
+  </div>
+  <div class="book_detail_wrap">
+    <div class="book_detail">
+      <div class="book_detail_content_wrap">
+        <div class="book_detail_thumbnail">
+          <img
+            src="{{domain}}{{book.thumbnail}}"
+            alt=""
+            onerror="this.src='/public/static/landing_page/img/book_default.jpg'"
+          />
+        </div>
+        <div class="book_detail_content">
+          <div class="book_detail_info">
+            <p class="book_detail_title">{{ book.title }}</p>
+            <p class="">Nhà xuất bản: {{ book.publisher }}</p>
+            <p class="">Tác giả: {{ book.authors.all|join:", " }}</p>
+            <p class="">Ngôn ngữ: {{ book.language }}</p>
+            {% if type == "book" %}
+            <p class="book_detail_available">
+              Hiện có:
+              <span
+                >{{book.total_available_book_items}} cuốn sẵn sàng mượn</span
+              >
+            </p>
+            {% endif %}
+          </div>
+          <div class="book_detail_action">
+            {% if type == "book" %}
+            <!--  -->
+            <a href="">Mượn sách</a>
+            {% else %}
+            <!--  -->
+            <a href="">Đọc sách</a>
+            <!--  -->
+            {% endif %}
+          </div>
+        </div>
+      </div>
+      <div class="book_detail_desc">
+        <div class="book_detail_desc_title">Giới thiệu sách</div>
+        <p class="book_detail_desc_content">{{ book.description }}</p>
+      </div>
+    </div>
+    <div class="book_relate">
+      <div class="book_relate_head">
+        <span>Sách tương tự</span>
+        {% if type == "book" %}
+        <!--  -->
+        <a href="/demo/book">Xem thêm</a>
+        <!--  -->
+        {% else %}
+        <!--  -->
+        <a href="/demo/ebook">Xem thêm</a>
+        <!--  -->
+        {% endif %}
+      </div>
+      <div class="book_relate_list">
+        {% for relate_book in relate_books %}
+        <div class="book_relate_item">
+          <div class="book_relate_thumbnail">
+            <img
+              src="{{domain}}{{relate_book.thumbnail}}"
+              alt=""
+              onerror="this.src='/public/static/landing_page/img/book_default.jpg'"
+            />
+          </div>
+          <div class="book_relate_content">
+            <a href="" class="book_relate_title">{{ relate_book.title }}</a>
+            <p class="book_relate_author">
+              Tác giả: {{ relate_book.authors.all|join:", " }}
+            </p>
+            <p class="book_relate_publisher">
+              Thông tin xuất bản: {{ relate_book.publisher }}
+            </p>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+  {% endif %}
+</main>
+{% endblock %}

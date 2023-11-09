@@ -1,0 +1,257 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-22 14:34+0700\n"
+"PO-Revision-Date: 2022-05-22 14:35+0700\n"
+"Last-Translator: Son Tran <tranbacson@zen8labs.com>\n"
+"Language-Team: \n"
+"Language: vi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 3.0.1\n"
+
+#: modules/account/user/models.py:24
+msgid "user"
+msgstr "người dùng"
+
+#: modules/account/user/views/auth.py:26
+msgid "Incorrect login information. Please try again"
+msgstr "Thông tin đăng nhập không chính xác. Vui lòng thử lại"
+
+#: modules/account/user/views/auth.py:47
+msgid "Can not refresh token"
+msgstr "Không thể làm mới token"
+
+#: modules/account/user/views/auth.py:102
+#: modules/account/user/views/auth.py:134
+msgid "Password and confirm password didn't match"
+msgstr "Mật khẩu và mật khẩu xác nhận không khớp"
+
+#: modules/account/user/views/auth.py:106 modules/noti/verif/views/custom.py:15
+msgid "Invalid OTP"
+msgstr "Mã OTP không hợp lệ"
+
+#: modules/account/user/views/auth.py:110
+msgid "Can not reset password"
+msgstr "Không thể khôi phục mật khẩu"
+
+#: modules/account/user/views/auth.py:138
+msgid "Incorrect current password"
+msgstr "Mật khẩu hiện tại không chính xác"
+
+#: modules/noti/verif/helpers/utils.py:18
+#, python-brace-format
+msgid "{settings.APP_TITLE} - Verification code"
+msgstr "{settings.APP_TITLE} - Mã xác nhận"
+
+#: modules/noti/verif/helpers/utils.py:22
+msgid "You have entered incorrect OTP so many times. Please try again later"
+msgstr "Bạn đã nhập sai mã OTP quá số lần quy định. Xin vui lòng gửi lại sau"
+
+#: modules/noti/verif/helpers/utils.py:70
+msgid "Can not send OTP, please try again after 90 seconds"
+msgstr "Không thể gửi OTP, bạn hãy thử lại sau khi 90 giây"
+
+#: services/helpers/res_utils.py:15
+msgid "This user didn't associate with any profile."
+msgstr "Người dùng này không được gắn với tài khoản nào."
+
+#: services/helpers/utils.py:512
+msgid "Passwords must contain at least 8 characters in length"
+msgstr "Mật khẩu phải có độ dài ít nhất 8 ký tự"
+
+#: services/helpers/utils.py:513
+msgid "a minimum of 1 uppercase letter"
+msgstr "phải có ít nhất 1 ký tự"
+
+#: services/helpers/utils.py:514
+msgid "a minimum of 1 numeric character"
+msgstr "phải có ít nhất 1 chữ số"
+
+#: services/helpers/utils.py:520
+msgid "Make sure your password is at least 8 letters"
+msgstr "Mật khẩu không thể ngắn hơn 8 ký tự"
+
+#: services/helpers/utils.py:522
+msgid "Make sure your password has a number in it"
+msgstr "Thiếu số trong mật khẩu"
+
+#: services/helpers/utils.py:524
+msgid "Make sure your password has a capital letter in it"
+msgstr "Thiếu ký tự viết hoa trong mật khẩu"
+
+#: services/validators/validator.py:19
+msgid "Invalid phone number format"
+msgstr "Số điện thoại không đúng định dạng"
+
+#~ msgid "Invalid email format"
+#~ msgstr "Email không đúng định dạng"
+
+#~ msgid "Please enter your password"
+#~ msgstr "Bạn hãy nhập mật khẩu"
+
+#~ msgid "Email length can not excess 100 characters"
+#~ msgstr "Độ dài email không thể vượt quá 100 ký tự"
+
+#~ msgid "Phone number can not be blank"
+#~ msgstr "Không thể để trống số điện thoại"
+
+#~ msgid "Phone number length can not excess 50 characters"
+#~ msgstr "Độ dài số điện thoại không thể vượt quá 50 ký tự"
+
+#~ msgid "This profile already had PID"
+#~ msgstr "Tài khoản này đã có PID"
+
+#~ msgid "Can not set PID"
+#~ msgstr "Không thể gán PID"
+
+#~ msgid "Neither you nor your relatives have this profile_id"
+#~ msgstr "Bạn chỉ có thể tạo hồ sơ của người thân mình"
+
+#~ msgid "PID is required"
+#~ msgstr "Trường PID là bắt buộc"
+
+#~ msgid "Can not add yourself as a relative"
+#~ msgstr "Bạn không thể nhập thông tin chính mình để tạo hồ sơ người thân"
+
+#~ msgid "Our system detects that you could be a robot. Please try again."
+#~ msgstr "Hệ thống chúng tôi nhận thấy bạn có thể là người máy. Xin vui lòng thử lại."
+
+#~ msgid "OneVinmec - Email address verification"
+#~ msgstr "OneVinmec - Xác nhận địa chỉ email"
+
+#~ msgid "Can not add a profile multiple times"
+#~ msgstr "Không thể thêm 1 hồ sơ nhiều lần"
+
+#~ msgid "This relative profile already exist."
+#~ msgstr "Thông tin người thân này đã tồn tại."
+
+#~ msgid "Your account has been locked. Please, reactivate it before logging in again!"
+#~ msgstr "Tài khoản đang bị khóa. Hãy kích hoạt lại trước khi đăng nhập!"
+
+#~ msgid "This email already exists in the system. Please, use another email to register or use the \"Forgot password\" function."
+#~ msgstr "Email đã tồn tại trong hệ thống. Vui lòng dùng email khác để đăng ký hoặc sử dụng chức năng “Quên mật khẩu”."
+
+#~ msgid "This phone number already exists in the system. Please use another phone number to register or use the \"Forgot password\" function."
+#~ msgstr "Số điện thoại đã tồn tại trong hệ thống. Vui lòng dùng số điện thoại khác để đăng ký hoặc sử dụng chức năng “Quên mật khẩu”."
+
+#~ msgid "Wrong activation code"
+#~ msgstr "Sai mã kích hoạt"
+
+#~ msgid "You can only connect PID your profile or relative profiles"
+#~ msgstr "Bạn chỉ có thể kết nối hồ sơ của chính mình hoặc người thân của bạn"
+
+#~ msgid "This profile already connected with PID"
+#~ msgstr "Tài khoản này đã kết nối PID"
+
+#~ msgid "Patient code does not exist in Vinmec Healthcare System"
+#~ msgstr "Mã y tế không tồn tại trong hệ thống Vinmec"
+
+#~ msgid "We did not find any phone number which is associated to your Vinmec’s medical record. Please contact Vinmec customer care for support"
+#~ msgstr "Chúng tôi không tìm thấy số điện thoại của bạn ở trong hồ sơ y tế tại Vinmec. Bạn hãy liên lạc với CSKH để được trợ giúp"
+
+#~ msgid "You have no permission to get this profile info"
+#~ msgstr "Bạn không thể xem thông tin tài khoản của người này"
+
+#~ msgid "Passwords must contain at least 8 characters in length, a minimum of 1 uppercase letter, a minimum of 1 numeric character"
+#~ msgstr "Mật khẩu phải ít nhất 8 ký tự, chứa 1 ký tự viết hoa, chứa 1 ký tự số"
+
+#~ msgid "Wrong OTP"
+#~ msgstr "Sai OTP"
+
+#~ msgid "You have reset your password 5 times in a row. Please wait for 5 minutes"
+#~ msgstr "Bạn đã yêu cầu thiết lập lại mật khẩu 5 lần liên tục. Vui lòng đợi 5 phút để tiếp tục"
+
+#~ msgid "Can not send OTP, please try again later"
+#~ msgstr "Không thể gửi OTP, bạn hãy thử lại sau"
+
+#~ msgid "Wrong OTP, please try again"
+#~ msgstr "Sai OTP, bạn hãy thử lại sau"
+
+#~ msgid "Token expired"
+#~ msgstr "Token đã hết hạn"
+
+#~ msgid "Can not verify token"
+#~ msgstr "Không thể xác thực token"
+
+#~ msgid "Can not create account"
+#~ msgstr "Không thể tạo tài khoản"
+
+#~ msgid "Activate fail"
+#~ msgstr "Kích hoạt thất bại"
+
+#~ msgid "Password can not be blank"
+#~ msgstr "Không thể để trống mật khẩu"
+
+#~ msgid "Reset password fail"
+#~ msgstr "Khôi phục mật khẩu thất bại"
+
+#~ msgid "Password can not be same as username"
+#~ msgstr "Mật khẩu không thể giống tên đăng nhập"
+
+#~ msgid "Make sure your password is maximum 50 letters"
+#~ msgstr "Mật khẩu không thể dài hơn 40 ký tự"
+
+#~ msgid "Key pid is required to create patient id object"
+#~ msgstr "Trường pid là bắt buộc"
+
+#~ msgid "Wrong username or password"
+#~ msgstr "Sai tên đăng nhập hoặc mật khẩu"
+
+#~ msgid "Wrong username or password."
+#~ msgstr "Tên người dùng hoặc mật khẩu sai."
+
+#~ msgid "Email can not be blank"
+#~ msgstr "Email không thể rỗng"
+
+#~ msgid "Email already exist"
+#~ msgstr "Email đã tồn tại"
+
+#~ msgid "Phone number already exist"
+#~ msgstr "Số điện thoại đã tồn tại"
+
+#~ msgid "Invalid phone number"
+#~ msgstr "Số điện thoại không đúng định dạng"
+
+#~ msgid "Profile info duplicated"
+#~ msgstr "Thông tin hồ sơ bị trùng với 1 hồ sơ khác"
+
+#~ msgid "Phone number is required to create relative profile"
+#~ msgstr "Số điện thoại là trường bắt buộc để tạo tài khoản người thân"
+
+#~ msgid "Name is required to create relative profile"
+#~ msgstr "Tên là trường bắt buộc để tạo tài khoản người thân"
+
+#~ msgid "Date of birth is required to create relative profile"
+#~ msgstr "Ngày tháng năm sinh là trường bắt buộc để tạo tài khoản người thân"
+
+#~ msgid "Gender is required to create relative profile"
+#~ msgstr "Giới tính là trường bắt buộc để tạo tài khoản người thân"
+
+#~ msgid "Can not fetch PID of this customer, please contact Vinmec for supporting"
+#~ msgstr "Không thể lấy PID, bạn vui lòng liên hệ bộ phận hỗ trợ của Vinmec"
+
+#~ msgid "The phone number enterred is not valid"
+#~ msgstr "Số điện thoại không đúng định dạng"
+
+#~ msgid "Password length can not shorter than 6 characters"
+#~ msgstr "Độ dài mật khẩu không thể ngắn hơn 6 ký tự"
+
+#, fuzzy
+#~| msgid "Email length can not excess 100 characters"
+#~ msgid "Email length can not excess 50 characters"
+#~ msgstr "Độ dài email không thể vượt quá 100 ký tự"
+
+#~ msgid "Can not create CMS reading log"
+#~ msgstr "Không thể tạo lịch sử truy cập"
+
+#~ msgid "Can not create relationship"
+#~ msgstr "Không thể tạo mối quan hệ"

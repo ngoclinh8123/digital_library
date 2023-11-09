@@ -1,0 +1,5 @@
+# Remove all __pycache__ folders
+find ../api/ -type f -name '*.py[co]' -delete -o -type d -name __pycache__ -delete
+
+# Remove all migration files
+find ../api/ -path "*/migrations/*.py" -not -name "__init__.py" -delete

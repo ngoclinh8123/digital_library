@@ -1,0 +1,78 @@
+{
+    "navMenu": {
+        "profile": "Profile"
+    },
+    "login": {
+        "label": {
+            "signin": "Signin",
+            "forgotPassword": "Forgot pasword?",
+            "signup": "Signup",
+            "copyRight": "OneVinmec ver1.0 Copyright @ 2020\n Vinmec Healthcare System, All right reserved"
+        },
+        "login": "Login",
+        "loginByOTP": "Login by OTP",
+        "sendOTP": "Send SMS OTP",
+        "signup": "Signup",
+        "reset": "Reset",
+        "resetPassword": "Reset password",
+        "forgotPassword": "Forgot pasword",
+        "email": "Email",
+        "username": "Username",
+        "firstName": "First name",
+        "lastName": "Middle & last name",
+        "emailOrPhone": "Email or phone number",
+        "phone": "Phone number",
+        "sms": "SMS code",
+        "dob": "Date of birth",
+        "gender": "Gender",
+        "password": "Password",
+        "verificationCode": "Verification code",
+        "passwordAgain": "Password again",
+        "passwordAgainDidNotMatch": "Password didn't mach",
+        "wrongEmailOrPassword": "Wrong email or password"
+    },
+    "signup": {
+        "title": {
+            "main": "Tạo tài khoản mới",
+            "sub": "Vui lòng điền thông tin chính xác giúp bạn làm thủ tục tại bệnh viện nhanh chóng và dễ dàng hơn"
+        },
+        "buttonLabel": "Đăng ký",
+        "term": {
+            "1st": "Đăng ký nghĩa là bạn đồng ý với các",
+            "2nd": "điều khoản và điều kiện",
+            "3rd": "sử dụng OneVinmec"
+        }
+    },
+    "otp": {
+        "title": {
+            "phone": "Xác thực số điện thoại",
+            "email": "Xác thực địa chỉ email",
+            "sub": "Mã xác thực OTP đã được gửi đến"
+        },
+        "verificationCode": "Mã xác thực",
+        "verify": "Xác thực",
+        "notReceiveOTPYet": "Bạn chưa nhận được mã ?",
+        "sendOTPAgain": "Gửi lại OTP"
+    },
+    "profile": {
+        "name": "Họ tên bạn",
+        "dob": "Ngày sinh",
+        "phone_number": "Số điện thoại",
+        "email": "Email",
+        "gender": "Giới tính",
+        "relationship": "Mối quan hệ"
+    },
+    "common": {
+        "button": {
+            "close": "Close"
+        },
+        "form": {
+            "password": "Password",
+            "phoneOrEmail": "Phone number or email"
+        },
+        "placeholder": {
+            "phoneOrEmail": "Enter your phone number or email",
+            "password": "Password"
+        }
+    }
+}

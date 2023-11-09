@@ -1,0 +1,47 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;600&display=swap"); */
+
+.container {
+  /* font-family: "Quicksand", sans-serif; */
+  color: #5c5c5c;
+}
+
+.content_wrap {
+  margin: 36px 0;
+}
+
+.book_sg_container {
+  margin: 0 36px;
+  width: 100%;
+  border: 1px solid #5c5c5c;
+  padding: 8px 12px 36px;
+}
+
+.book_sg_header {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.book_sg_item {
+  display: flex;
+  width: 100%;
+  padding: 4px;
+  color: #5c5c5c;
+}
+
+.book_sg_item:hover {
+  background-color: #ddd;
+  color: #5c5c5c;
+}
+
+.book_sg_item_content {
+  margin: 0 8px;
+}
+
+.book_sg_image {
+  width: 60px;
+}
+
+.book_sg_title {
+  font-weight: 600;
+  font-size: 16px;
+}

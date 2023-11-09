@@ -1,0 +1,89 @@
+version: "2.1"
+
+services:
+  dien_ban_db:
+    container_name: dienbanlib_db
+    image: "postgres:12.2-alpine"
+    environment:
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - POSTGRES_DB=${POSTGRES_DB}
+    ports:
+      - "5432:5432"
+    volumes:
+      # - ./ext.sql:/docker-entrypoint-initdb.d/ext.sql
+      # - ./db.sql:/docker-entrypoint-initdb.d/db.sql
+      - ./dbdata:/var/lib/postgresql/data/:delegated
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready"]
+      interval: 10s
+      timeout: 5s
+      retries: 18
+
+  dien_ban_api:
+    container_name: dienbanlib_api
+    build:
+      context: ../api
+      dockerfile: ../docker/dockerfiles/api
+    volumes:
+      - ../api:/code:delegated
+      - ./firebase:/firebase
+    environment:
+      - TZ=Asia/Ho_Chi_Minh
+      - SECRET_KEY=${SECRET_KEY}
+      - DEBUG=${DEBUG}
+      - EMAIL_ENABLE=${EMAIL_ENABLE}
+
+      - APP_TITLE=${APP_TITLE}
+      - APP_DESCRTIPTION=%{APP_DESCRTIPTION}
+
+      - PORT=${PORT}
+      - PROTOCOL=${PROTOCOL}
+      - DOMAIN=${DOMAIN}
+
+      - DB_USER=${POSTGRES_USER}
+      - DB_PASSWORD=${POSTGRES_PASSWORD}
+      - DB_NAME=${POSTGRES_DB}
+      - DB_HOST=dien_ban_db
+      - DB_PORT=5432
+      - DB_TEST=base_test
+
+      - EMAIL_DOMAIN=${EMAIL_DOMAIN}
+      - EMAIL_HOST=${EMAIL_HOST}
+      - EMAIL_PORT=${EMAIL_PORT}
+      - EMAIL_HOST_USER=${EMAIL_HOST_USER}
+      - EMAIL_HOST_PASSWORD=${EMAIL_HOST_PASSWORD}
+      - EMAIL_USE_TLS=${EMAIL_USE_TLS}
+    depends_on:
+      dien_ban_db:
+        condition: service_healthy
+    tty: ${DOCKER_TTY}
+    command: ${DOCKER_COMMAND}
+
+  dien_ban_web:
+    container_name: dienbanlib_web
+    build:
+      context: ../web
+      dockerfile: ../docker/dockerfiles/web
+    volumes:
+      - ../web:/code:delegated
+      - /code/node_modules
+    tty: ${DOCKER_TTY}
+    command: ${DOCKER_WEB_COMMAND}
+
+  dien_ban_nginx:
+    container_name: dienbanlib_nginx
+    build:
+      context: ./
+      dockerfile: ./dockerfiles/nginx
+    restart: always
+    volumes:
+      - ./conf.d:/etc/nginx/conf.d
+      - ${SSL_PATH}:/resource/ssl
+      - ../api/public/:/resource/public
+    #   - ../web/dist/:/resource/public
+    ports:
+      - "443:443"
+      - "80:80"
+    depends_on:
+      - dien_ban_api

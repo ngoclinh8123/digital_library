@@ -1,0 +1,132 @@
+#loading-screen {
+  display: none;
+}
+
+.relative {
+  position: relative;
+}
+
+.content {
+  padding: 5px;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.right {
+  text-align: right;
+}
+
+.center {
+  text-align: center;
+}
+
+.left {
+  text-align: left;
+}
+
+.red {
+  color: red;
+}
+
+.green {
+  color: green;
+}
+
+.blue {
+  color: blue;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.field-error-message {
+  color: red;
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.red-dot::after {
+  content: " *";
+  color: red;
+}
+
+.form-group {
+  padding: 10px;
+}
+
+.invisible-btn {
+  background: transparent;
+  border: none !important;
+  font-size: 0;
+  position: absolute;
+}
+
+.backdrop {
+  padding-top: 25px;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  position: fixed;
+  z-index: 9999;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.editable {
+  cursor: pointer;
+  color: #346b89;
+  border-bottom: 1px dashed #346b89;
+}
+
+.pems-transfer .ant-transfer-list {
+  width: 458px;
+}
+
+table.styled-table {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+.styled-table th,
+.styled-table td {
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+
+.right-gray-border {
+  border-right: 1px #d8d8d8 solid;
+}
+
+.main-badge {
+  color: #b0b4b6;
+}
+
+.file-input {
+  height: 32px;
+}
+
+.file-input .ant-upload.ant-upload-drag,
+.file-input .ant-upload {
+  padding: 0 !important;
+}
+
+.flex-space {
+  display: flex;
+  justify-content: space-between;
+}
+
+.primary-color {
+  background-color: #0d1282;
+}
+.ant-table-tbody > tr > td,
+.ant-table-thead > tr > th {
+  padding-left: 8px !important;
+  padding-right: 8px !important;
+}

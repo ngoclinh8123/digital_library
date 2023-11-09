@@ -1,0 +1,318 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: vi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals = 1; plural = 0;\n"
+"mime-version: 1.0\n"
+"x-generator: Poedit 3.0.1\n"
+"X-Generator: Poedit 3.0.1\n"
+
+#: src/component/variable/config.js:14
+msgid "Config"
+msgstr "Cấu hình"
+
+#: src/component/staff/config.js:15
+msgid "Staff"
+msgstr "Nhân viên"
+
+#: src/component/role/config.js:14
+msgid "Group"
+msgstr "Nhóm"
+
+#: src/component/staff/profile/summary.jsx:22
+msgid "Fullname"
+msgstr "Họ và tên"
+
+#: src/component/auth/reset_pwd/form.jsx:23
+#: src/component/staff/config.js:36
+#: src/component/staff/profile/summary.jsx:10
+msgid "Email"
+msgstr "Email"
+
+#: src/component/staff/profile/summary.jsx:16
+#: src/component/staff/profile/update_profile/form.jsx:15
+msgid "Phone number"
+msgstr "Số điện thoại"
+
+#: src/component/staff/config.js:38
+msgid "Active"
+msgstr "Kích hoạt"
+
+#: src/component/staff/config.js:39
+msgid "Groups"
+msgstr "Nhóm"
+
+#: src/component/common/layout/main/modal_profile.jsx:40
+#: src/component/staff/profile/index.jsx:44
+#: src/component/staff/profile/update_profile/index.jsx:42
+#: src/component/staff/profile/update_profile/index.jsx:45
+msgid "Update profile"
+msgstr "Cập nhật hồ sơ"
+
+#: src/component/auth/change_pwd/index.jsx:39
+#: src/component/auth/change_pwd/index.jsx:42
+#: src/component/common/layout/main/modal_profile.jsx:48
+#: src/component/staff/profile/index.jsx:52
+msgid "Change password"
+msgstr "Đổi mật khẩu"
+
+#: src/component/auth/reset_pwd/index.jsx:51
+#: src/component/auth/reset_pwd/index.jsx:53
+msgid "Reset password"
+msgstr "Khôi phục mật khẩu"
+
+#: src/component/auth/change_pwd/index.jsx:41
+#: src/component/auth/reset_pwd/index.jsx:52
+#: src/component/author/dialog/index.jsx:26
+#: src/component/book/dialog/index.jsx:31
+#: src/component/category/dialog/index.jsx:26
+#: src/component/manage/const.js:9
+#: src/component/manage/dialog/index.jsx:19
+#: src/component/rack/dialog/index.jsx:26
+#: src/component/role/dialog/index.jsx:65
+#: src/component/staff/dialog/index.jsx:43
+#: src/component/staff/profile/update_profile/index.jsx:44
+#: src/component/variable/dialog/index.jsx:64
+msgid "Cancel"
+msgstr "Thoát"
+
+#: src/component/auth/change_pwd/form.jsx:20
+msgid "Old password"
+msgstr "Mật khẩu cũ"
+
+#: src/component/auth/change_pwd/form.jsx:25
+msgid "New password"
+msgstr "Mật khẩu mới"
+
+#: src/component/auth/change_pwd/form.jsx:30
+msgid "Confirm new password"
+msgstr "Xác nhận mật khẩu mới"
+
+#: src/component/variable/config.js:23
+msgid "Config name"
+msgstr "Tên cấu hình"
+
+#: src/component/variable/config.js:24
+msgid "Config value"
+msgstr "Giá trị cấu hình"
+
+#: src/component/common/table/buttons.jsx:35
+#: src/service/helper/util.js:118
+msgid "Add new"
+msgstr "Thêm mới"
+
+#: src/component/author/dialog/index.jsx:25
+#: src/component/book/dialog/index.jsx:30
+#: src/component/category/dialog/index.jsx:25
+#: src/component/manage/dialog/index.jsx:18
+#: src/component/rack/dialog/index.jsx:25
+#: src/component/role/dialog/index.jsx:63
+#: src/component/staff/dialog/index.jsx:41
+#: src/component/variable/dialog/index.jsx:62
+msgid "Save"
+msgstr "Lưu"
+
+#: src/component/common/table/buttons.jsx:56
+#: src/service/helper/util.js:118
+msgid "Update"
+msgstr "Cập nhật"
+
+#: src/component/author/config.js:18
+#: src/component/book/config.js:18
+#: src/component/category/config.js:18
+#: src/component/manage/config.js:18
+#: src/component/rack/config.js:18
+#: src/component/role/config.js:18
+#: src/component/staff/config.js:19
+#: src/component/variable/config.js:18
+#, javascript-format
+msgid "Do you want to remote this ${ name }?"
+msgstr "Bạn có muốn xóa ${ name } này?"
+
+#: src/component/author/config.js:19
+#: src/component/book/config.js:19
+#: src/component/category/config.js:19
+#: src/component/manage/config.js:19
+#: src/component/rack/config.js:19
+#: src/component/role/config.js:19
+#: src/component/staff/config.js:20
+#: src/component/variable/config.js:19
+msgid "Do you want to remote these ${ name }?"
+msgstr "Bạn có muốn xóa những ${ name } này?"
+
+#: src/component/common/table/buttons.jsx:49
+msgid "Remove selected"
+msgstr "Xóa chọn"
+
+#: src/component/role/config.js:29
+msgid "Group name"
+msgstr "Tên nhóm"
+
+#: src/component/role/config.js:30
+msgid "Permissions"
+msgstr "Quyền"
+
+#: src/component/common/table/search_input.jsx:19
+msgid "Search"
+msgstr "Tìm kiếm"
+
+#: src/component/common/table/buttons.jsx:73
+msgid "Remove"
+msgstr "Xóa"
+
+#: src/component/common/layout/main/index.jsx:81
+#: src/component/common/layout/main/index.jsx:120
+msgid "Member"
+msgstr "Thành viên"
+
+#: src/component/book/config.js:14
+#: src/component/common/layout/main/index.jsx:88
+#: src/component/common/layout/main/index.jsx:121
+#: src/component/manage/config.js:30
+msgid "Book"
+msgstr "Sách"
+
+#: src/component/author/config.js:28
+#: src/component/book/config.js:38
+#: src/component/book_detail/config.js:23
+#: src/component/category/config.js:28
+#: src/component/manage/config.js:28
+#: src/component/rack/config.js:28
+msgid "Title"
+msgstr "Tiêu đề"
+
+#: src/component/book/config.js:40
+#: src/component/book/dialog/book_view.jsx:85
+#: src/component/book_detail/config.js:24
+msgid "Language"
+msgstr "Ngôn ngữ"
+
+#: src/component/book/config.js:41
+#: src/component/book_detail/config.js:25
+msgid "Publisher"
+msgstr "Nhà xuất bản"
+
+#: src/component/book/config.js:42
+#: src/component/book/dialog/book_view.jsx:93
+#: src/component/book_detail/config.js:26
+msgid "Quantity"
+msgstr "Số lượng"
+
+#: src/component/common/table/buttons.jsx:18
+msgid "Detail"
+msgstr "Chi tiết"
+
+#: src/component/author/config.js:14
+#: src/component/book/config.js:39
+#: src/component/book/config.js:49
+#: src/component/book/config.js:51
+#: src/component/book/dialog/book_view.jsx:71
+#: src/component/common/layout/main/index.jsx:95
+#: src/component/common/layout/main/index.jsx:122
+msgid "Author"
+msgstr "Tác giả"
+
+#: src/component/book/config.js:48
+#: src/component/book/config.js:50
+#: src/component/book/dialog/book_view.jsx:81
+#: src/component/category/config.js:14
+#: src/component/category/config.js:29
+#: src/component/common/layout/main/index.jsx:102
+#: src/component/common/layout/main/index.jsx:123
+msgid "Category"
+msgstr "Thể loại"
+
+#: src/component/author/config.js:29
+msgid "Name"
+msgstr "Tên"
+
+#: src/component/author/config.js:30
+#: src/component/book/config.js:46
+msgid "Description"
+msgstr "Mô tả"
+
+#: src/component/book/config.js:43
+msgid "Publication_date"
+msgstr "Ngày phát hành"
+
+#: src/component/book/config.js:44
+#: src/component/book/dialog/book_view.jsx:89
+msgid "Price"
+msgstr "Giá tiền"
+
+#: src/component/book/config.js:45
+msgid "Thumbnail"
+msgstr "Ảnh bìa"
+
+#: src/component/book/config.js:47
+#: src/component/book/dialog/book_view.jsx:108
+msgid "File"
+msgstr ""
+
+#: src/component/book/config.js:52
+#: src/component/common/layout/main/index.jsx:109
+#: src/component/common/layout/main/index.jsx:124
+#: src/component/manage/config.js:14
+#: src/component/rack/config.js:14
+msgid "Rack"
+msgstr "Vị trí"
+
+#: src/component/staff/config.js:40
+msgid "Password"
+msgstr "Mật khẩu"
+
+#: src/component/rack/config.js:30
+msgid "Location"
+msgstr "Vị trí"
+
+#: src/component/common/layout/main/index.jsx:67
+#: src/component/common/layout/main/index.jsx:127
+#: src/component/common/layout/main/index.jsx:131
+#: src/component/common/layout/main/index.jsx:133
+msgid "Manage"
+msgstr "Mượn trả"
+
+#: src/component/common/layout/main/index.jsx:74
+#: src/component/common/layout/main/index.jsx:126
+msgid "Statistic"
+msgstr "Thống kê"
+
+#: src/component/manage/const.js:4
+#: src/component/manage/index.jsx:144
+msgid "Requested"
+msgstr "Đang đợi duyệt"
+
+#: src/component/manage/const.js:5
+#: src/component/manage/index.jsx:148
+msgid "Approved"
+msgstr "Đã chấp thuận"
+
+#: src/component/manage/const.js:6
+#: src/component/manage/index.jsx:152
+msgid "Borrowed"
+msgstr "Đã mượn"
+
+#: src/component/manage/const.js:7
+#: src/component/manage/index.jsx:156
+msgid "Returned"
+msgstr "Đã trả"
+
+#: src/component/manage/const.js:8
+#: src/component/manage/index.jsx:160
+msgid "Over_due"
+msgstr "Quá hạn"
+
+#: src/component/staff/config.js:34
+msgid "Họ và tên đệm"
+msgstr ""
+
+#: src/component/staff/config.js:35
+msgid "Tên"
+msgstr ""

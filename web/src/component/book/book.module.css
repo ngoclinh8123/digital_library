@@ -1,0 +1,41 @@
+.item_title_wrap {
+  display: flex;
+  align-items: center;
+}
+
+.item_title_image {
+  width: 50px;
+}
+
+.item_title {
+  margin: 0 12px;
+}
+
+.action_container {
+  background-color: white;
+  min-width: 100px;
+  box-shadow: -2px 2px 4px 2px rgba(0, 0, 0, 0.12);
+}
+
+.action_container > div {
+  cursor: pointer;
+  text-align: start;
+  padding: 0 8px;
+}
+
+.action_container > div:not(:first-child) {
+  border-top: 1px solid #eee;
+}
+
+.action_container > div:hover {
+  background-color: #eee;
+}
+
+.action_btn_setting {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.action_btn_setting:hover {
+  color: blue;
+}
